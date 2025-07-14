@@ -15,10 +15,12 @@ export default function SearchBar({ city, setCity, onSearch }: Props) {
         value={city}
         onChange={(e) => setCity(e.target.value)}
         placeholder="Digite o nome da cidade"
-        className="px-4 py-2 rounded text-black"
+        className="px-4 py-2 rounded"
       />
       <Button
         onClick={onSearch}
+        variant={"ghost"}
+        className="border"
       >
         Buscar
       </Button>

@@ -11,6 +11,7 @@ import {
   getForecastByCity,
 } from "../services/weatherService";
 import type { ForecastDay } from "../components/ForecastCard";
+import { Moon, Sun } from "lucide-react";
 
 export default function Home() {
   const [city, setCity] = useState("");
@@ -18,6 +19,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [forecast, setForecast] = useState<ForecastDay[]>([]);
+  const [darkMode, setDarkMode] = useState(false);
 
   type ForecastAPIItem = {
     dt_txt: string;
@@ -81,9 +83,30 @@ export default function Home() {
     }
   };
 
+  const toggleDarkMode = () => {
+    setDarkMode((prev) => !prev);
+  };
+
   return (
-    <main className="min-h-screen flex justify-center px-4 py-8">
+    <main
+      className={`min-h-screen flex justify-center px-4 py-8 transition-colors ${
+        darkMode ? "bg-gray-900 text-gray-100" : "bg-white text-gray-900"
+      }`}
+    >
       <div className="w-full max-w-3xl">
+        <div className="flex justify-end mb-4">
+          <button
+            onClick={toggleDarkMode}
+            className="border rounded-xl px-3 py-1  dark:bg-black dark:text-gray-200 transition"
+          >
+            {darkMode ? (
+              <Sun className="w-6 h-6" />
+            ) : (
+              <Moon className="w-6 h-6" />
+            )}
+          </button>
+        </div>
+
         <h1 className="text-4xl font-bold text-center mb-4">WeatherWise 🌤️</h1>
 
         <SearchBar city={city} setCity={setCity} onSearch={fetchWeather} />

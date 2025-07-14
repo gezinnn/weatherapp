@@ -19,7 +19,7 @@ export default function ForecastCard({
   });
 
   return (
-    <div className="text-black bg-white/10 backdrop-blur-sm p-4 rounded-xl text-center border shadow-md hover:scale-103 transition-transform duration-300">
+    <div className=" bg-white/10 backdrop-blur-sm p-4 rounded-xl text-center border shadow-md hover:scale-103 transition-transform duration-300">
       <p className="font-semibold">{weekday}</p>
       <img
         src={`https://openweathermap.org/img/wn/${icon}@2x.png`}

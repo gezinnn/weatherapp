@@ -49,32 +49,31 @@ npm run dev
 ```
 ## 🔧 Estrutura de Componentes
 
+```bash
 src/
 ├── app/
-
 │   ├── favicon.ico
 │   ├── globals.css
 │   ├── layout.tsx
 │   └── page.tsx
 ├── components/
-
-│   └── ui/  ├──
+│   └── ui/
+│       ├── button.tsx
+│       ├── input.tsx
 │       ├── Error.tsx
 │       ├── ForecastCard.tsx
 │       ├── Loader.tsx
 │       ├── SearchBar.tsx
 │       └── WeatherCard.tsx
 ├── lib/
-
 │   └── utils.ts
 ├── services/
-
 │   └── weatherService.ts
 ├── types/
-
 │   └── weather.d.ts
 └── utils/
     └── formatDate.ts
+```
 
 ---
 

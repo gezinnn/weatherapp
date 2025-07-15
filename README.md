@@ -11,7 +11,7 @@ WeatherWise é um aplicativo moderno de previsão do tempo desenvolvido com **Re
 
 ## 📸 Preview
 
-![WeatherWise Screenshot](./screenshot.png)
+<img width="1912" height="802" alt="image" src="https://github.com/user-attachments/assets/1fe968bb-66db-4d2e-8a76-7f7f1dd68e5a" />
 
 ---
 
@@ -34,3 +34,15 @@ WeatherWise é um aplicativo moderno de previsão do tempo desenvolvido com **Re
 ```bash
 git clone https://github.com/gezinnn/weatherwise.git
 cd weatherwise
+
+2. Clone o repositório:
+npm install
+
+3. Crie um arquivo .env.local com sua chave da OpenWeatherMap:
+NEXT_PUBLIC_WEATHER_API_KEY=your_api_key_here
+
+4.Inicie o projeto:
+npm run dev
+
+---
+

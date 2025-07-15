@@ -49,11 +49,13 @@ npm run dev
 
 src/
 ├── app/
+
 │   ├── favicon.ico
 │   ├── globals.css
 │   ├── layout.tsx
 │   └── page.tsx
 ├── components/
+
 │   └── ui/  ├──
 │       ├── Error.tsx
 │       ├── ForecastCard.tsx
@@ -61,10 +63,13 @@ src/
 │       ├── SearchBar.tsx
 │       └── WeatherCard.tsx
 ├── lib/
+
 │   └── utils.ts
 ├── services/
+
 │   └── weatherService.ts
 ├── types/
+
 │   └── weather.d.ts
 └── utils/
     └── formatDate.ts
@@ -92,7 +97,7 @@ Os dados são obtidos da API pública OpenWeatherMap, usando os endpoints:
 
 ---
 
-##📘 Licença
+## 📘 Licença
 
 Projeto desenvolvido para fins de aprendizado e portfólio. Você pode usá-lo como base para seus próprios projetos!
 

@@ -32,5 +32,5 @@ WeatherWise é um aplicativo moderno de previsão do tempo desenvolvido com **Re
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/weatherwise.git
+git clone https://github.com/gezinnn/weatherwise.git
 cd weatherwise

@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌤️ WeatherWise
 
-## Getting Started
+WeatherWise é um aplicativo moderno de previsão do tempo desenvolvido com **React**, **TypeScript** e **TailwindCSS**, que consome a API da [OpenWeatherMap](https://openweathermap.org/api) para exibir:
 
-First, run the development server:
+- 🌡️ Temperatura atual
+- 🌧️ Previsão para os próximos 5 dias
+- 💨 Velocidade do vento, umidade e sensação térmica
+- 🎯 Busca por cidade
+
+---
+
+## 📸 Preview
+
+<img width="1912" height="802" alt="image" src="https://github.com/user-attachments/assets/1fe968bb-66db-4d2e-8a76-7f7f1dd68e5a" />
+
+<img width="1918" height="764" alt="image" src="https://github.com/user-attachments/assets/465e4d71-3ca5-466f-8717-7b0c86a341c5" />
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- **React + Next.js**
+- **TypeScript**
+- **TailwindCSS**
+- **API REST** (OpenWeatherMap)
+- **ESLint + Prettier**
+- **Composição com Componentes Reutilizáveis**
+- **Responsividade com Flexbox + Grid**
+
+---
+
+## 📦 Instalação
+
+1. Clone o repositório:
 
 ```bash
+git clone https://github.com/gezinnn/weatherwise.git
+cd weatherwise
+
+2. Clone o repositório:
+npm install
+
+3. Crie um arquivo .env.local com sua chave da OpenWeatherMap:
+NEXT_PUBLIC_WEATHER_API_KEY=your_api_key_here
+
+4.Inicie o projeto:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+```
+## 🔧 Estrutura de Componentes
+
+```bash
+src/
+├── app/
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   └── ui/
+│       ├── button.tsx
+│       ├── input.tsx
+│       ├── Error.tsx
+│       ├── ForecastCard.tsx
+│       ├── Loader.tsx
+│       ├── SearchBar.tsx
+│       └── WeatherCard.tsx
+├── lib/
+│   └── utils.ts
+├── services/
+│   └── weatherService.ts
+├── types/
+│   └── weather.d.ts
+└── utils/
+    └── formatDate.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌎 API Utilizada
 
-## Learn More
+Os dados são obtidos da API pública OpenWeatherMap, usando os endpoints:
 
-To learn more about Next.js, take a look at the following resources:
+- /data/2.5/weather
+- /data/2.5/forecast
+  
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💡 Funcionalidades
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **✅ Busca por cidade**
+- **✅ Exibição do clima atual**
+- **✅ Previsão dos próximos 5 dias**
+- **✅ Ícones dinâmicos de clima**
+- **✅ Feedback visual com loading e mensagens de erro**
+- **✅ Feedback visual com loading e mensagens de erro**
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📘 Licença
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Projeto desenvolvido para fins de aprendizado e portfólio. Você pode usá-lo como base para seus próprios projetos!
+
+---
+
+## 🢛 Autor
+
+Desenvolvido por Geovanni Almeida
+
+---

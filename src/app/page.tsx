@@ -70,9 +70,9 @@ export default function Home() {
         });
 
       setForecast(dailyForecast);
-    } catch (err: unknown) {
-      if (err instanceof Error) {
-        setError(err.message);
+    } catch (err) {
+      if (err && typeof err === "object" && "message" in err) {
+        setError(String((err as { message: string }).message));
       } else {
         setError("Erro desconhecido");
       }

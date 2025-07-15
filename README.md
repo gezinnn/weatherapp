@@ -44,5 +44,62 @@ NEXT_PUBLIC_WEATHER_API_KEY=your_api_key_here
 4.Inicie o projeto:
 npm run dev
 
+```
+## 🔧 Estrutura de Componentes
+
+src/
+├── app/
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   └── ui/  ├──
+│       ├── Error.tsx
+│       ├── ForecastCard.tsx
+│       ├── Loader.tsx
+│       ├── SearchBar.tsx
+│       └── WeatherCard.tsx
+├── lib/
+│   └── utils.ts
+├── services/
+│   └── weatherService.ts
+├── types/
+│   └── weather.d.ts
+└── utils/
+    └── formatDate.ts
+
 ---
 
+
+## 🌎 API Utilizada
+
+Os dados são obtidos da API pública OpenWeatherMap, usando os endpoints:
+
+- /data/2.5/weather
+- /data/2.5/forecast
+  
+---
+
+## 💡 Funcionalidades
+
+- **✅ Busca por cidade**
+- **✅ Exibição do clima atual**
+- **✅ Previsão dos próximos 5 dias**
+- **✅ Ícones dinâmicos de clima**
+- **✅ Feedback visual com loading e mensagens de erro**
+- **✅ Feedback visual com loading e mensagens de erro**
+
+---
+
+##📘 Licença
+
+Projeto desenvolvido para fins de aprendizado e portfólio. Você pode usá-lo como base para seus próprios projetos!
+
+---
+
+## 🢛 Autor
+
+Desenvolvido por Geovanni Almeida
+
+---

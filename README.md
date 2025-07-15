@@ -13,6 +13,8 @@ WeatherWise é um aplicativo moderno de previsão do tempo desenvolvido com **Re
 
 <img width="1912" height="802" alt="image" src="https://github.com/user-attachments/assets/1fe968bb-66db-4d2e-8a76-7f7f1dd68e5a" />
 
+<img width="1918" height="764" alt="image" src="https://github.com/user-attachments/assets/465e4d71-3ca5-466f-8717-7b0c86a341c5" />
+
 ---
 
 ## 🚀 Tecnologias Utilizadas
